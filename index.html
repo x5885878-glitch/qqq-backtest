@@ -152,18 +152,18 @@ table.tbl tr:hover td{background:#1a2433}
 
       <div style="font-size:12px;color:var(--txt3);margin:6px 0 4px">平時：100% 1x（固定）</div>
 
-      <div style="font-size:12.5px;color:var(--accent2);margin:12px 0 4px;font-weight:700">急跌（QLD 觸發）時配置</div>
+      <div style="font-size:12.5px;color:var(--accent2);margin:12px 0 4px;font-weight:700">急跌（<span class="lv2x">QLD</span> 觸發）時配置</div>
       <div class="ctl"><label>1x<span class="val" id="t1_1x_v">70</span></label>
         <input type="range" id="t1_1x" min="0" max="100" value="70" step="5"></div>
-      <div class="ctl"><label>2x（QLD）<span class="val" id="t1_2x_v">30</span></label>
+      <div class="ctl"><label>2x（<span class="lv2x">QLD</span>）<span class="val" id="t1_2x_v">30</span></label>
         <input type="range" id="t1_2x" min="0" max="100" value="30" step="5"></div>
 
-      <div style="font-size:12.5px;color:var(--accent2);margin:12px 0 4px;font-weight:700">恐慌（TQQQ 觸發）時配置</div>
+      <div style="font-size:12.5px;color:var(--accent2);margin:12px 0 4px;font-weight:700">恐慌（<span class="lv3x">TQQQ</span> 觸發）時配置</div>
       <div class="ctl"><label>1x<span class="val" id="t2_1x_v">40</span></label>
         <input type="range" id="t2_1x" min="0" max="100" value="40" step="5"></div>
-      <div class="ctl"><label>2x（QLD）<span class="val" id="t2_2x_v">30</span></label>
+      <div class="ctl"><label>2x（<span class="lv2x">QLD</span>）<span class="val" id="t2_2x_v">30</span></label>
         <input type="range" id="t2_2x" min="0" max="100" value="30" step="5"></div>
-      <div class="ctl"><label>3x（TQQQ）<span class="val" id="t2_3x_v">30</span></label>
+      <div class="ctl"><label>3x（<span class="lv3x">TQQQ</span>）<span class="val" id="t2_3x_v">30</span></label>
         <input type="range" id="t2_3x" min="0" max="100" value="30" step="5"></div>
 
       <div class="wsum" id="lvsum"></div>
@@ -174,13 +174,13 @@ table.tbl tr:hover td{background:#1a2433}
         <input type="range" id="strongLB" min="5" max="20" value="10" step="1"></div>
       <div class="ctl"><label>強勢門檻：站上 MA50 天數 ≥<span class="val" id="strongTh_v">7</span></label>
         <input type="range" id="strongTh" min="3" max="20" value="7" step="1"></div>
-      <div class="ctl"><label>QLD 急跌門檻：自 20 日高回撤 ≥<span class="val" id="qldDD_v">5%</span></label>
+      <div class="ctl"><label><span class="lv2x">QLD</span> 急跌門檻：自 20 日高回撤 ≥<span class="val" id="qldDD_v">5%</span></label>
         <input type="range" id="qldDD" min="2" max="15" value="5" step="0.5"></div>
-      <div class="ctl"><label>TQQQ 恐慌：VIX ≥<span class="val" id="vixTh_v">30</span></label>
+      <div class="ctl"><label><span class="lv3x">TQQQ</span> 恐慌：VIX ≥<span class="val" id="vixTh_v">30</span></label>
         <input type="range" id="vixTh" min="15" max="55" value="30" step="1"></div>
-      <div class="ctl"><label>TQQQ 三選二門檻：得分 ≥<span class="val" id="tqScore_v">2</span></label>
+      <div class="ctl"><label><span class="lv3x">TQQQ</span> 三選二門檻：得分 ≥<span class="val" id="tqScore_v">2</span></label>
         <input type="range" id="tqScore" min="1" max="3" value="2" step="1"></div>
-      <div class="ctl"><label>TQQQ 去槓桿：VIX 回落至 &lt;<span class="val" id="vixExit_v">25</span></label>
+      <div class="ctl"><label><span class="lv3x">TQQQ</span> 去槓桿：VIX 回落至 &lt;<span class="val" id="vixExit_v">25</span></label>
         <input type="range" id="vixExit" min="15" max="40" value="25" step="1">
         <div class="hint">恐慌訊號=進場觸發；持有 3x 直到 VIX 回落至此值以下</div></div>
     </div></details>
@@ -188,15 +188,15 @@ table.tbl tr:hover td{background:#1a2433}
     <details class="grp"><summary>進階參數</summary><div class="grpbody">
       <div class="ctl"><label>量比爆量門檻<span class="val" id="volSurge_v">1.4</span></label>
         <input type="range" id="volSurge" min="1" max="3" value="1.4" step="0.1"></div>
-      <div class="ctl"><label>TQQQ：MA120 支撐帶寬<span class="val" id="ma120Band_v">2%</span></label>
+      <div class="ctl"><label><span class="lv3x">TQQQ</span>：MA120 支撐帶寬<span class="val" id="ma120Band_v">2%</span></label>
         <input type="range" id="ma120Band" min="0.5" max="6" value="2" step="0.5"></div>
-      <div class="ctl"><label>TQQQ：深跌回撤門檻<span class="val" id="tqPull_v">10%</span></label>
+      <div class="ctl"><label><span class="lv3x">TQQQ</span>：深跌回撤門檻<span class="val" id="tqPull_v">10%</span></label>
         <input type="range" id="tqPull" min="5" max="25" value="10" step="1"></div>
       <div class="inl">
         <div class="ctl"><label>MA 短期</label><input type="number" id="maShort" value="50" step="5"></div>
         <div class="ctl"><label>MA 長期</label><input type="number" id="maLong" value="120" step="10"></div>
       </div>
-      <div class="ctl"><label>QLD 去槓桿：站回 MA50 確認天數<span class="val" id="exitCf_v">3</span></label>
+      <div class="ctl"><label><span class="lv2x">QLD</span> 去槓桿：站回 MA50 確認天數<span class="val" id="exitCf_v">3</span></label>
         <input type="range" id="exitCf" min="0" max="15" value="3" step="1">
         <div class="hint">急跌訊號=進場觸發；持有 2x 直到價格站回 MA50 達此天數</div></div>
     </div></details>
@@ -1608,7 +1608,17 @@ function fmtPct(v,d){
 }
 
 /* ════════ 參數標籤 ════════ */
+function updateLevNames(P){
+  const s2=[], s3=[];
+  for(const a of BASES){ if((P.w[a]||0)>0){ const M=LEVMAP[a];
+    const x2=M[0].toUpperCase(), x3=M[1].toUpperCase();
+    if(!s2.includes(x2))s2.push(x2); if(!s3.includes(x3))s3.push(x3); } }
+  const n2=s2.length?s2.join('/'):'—', n3=s3.length?s3.join('/'):'—';
+  document.querySelectorAll('.lv2x').forEach(e=>e.textContent=n2);
+  document.querySelectorAll('.lv3x').forEach(e=>e.textContent=n3);
+}
 function refreshParamLabels(P){
+  updateLevNames(P);
   $("wQQQ_v").textContent=$("wQQQ").value;
   $("wVOO_v").textContent=$("wVOO").value;
   $("wSOXX_v").textContent=$("wSOXX").value;
